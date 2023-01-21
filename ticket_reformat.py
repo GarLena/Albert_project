@@ -3,7 +3,7 @@ import re
 import pandas
 import os
 
-directory = "C:/Users/lenka/OneDrive/Plocha/100 days od Python/Projects/Albert projekt/tickets/"
+directory = "path for the pdf file"
 
 for filename in os.listdir(directory):
     with open(os.path.join(directory,filename), 'rb') as f:

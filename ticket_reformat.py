@@ -110,11 +110,11 @@ for filename in os.listdir(directory):
 
     print(new)
 
-    # # Renaming the PDF file and getting the CSV file to have the same name
-    # old_name = f"./tickets/{filename}"
-    # new_name = f"./tickets/{date[0]}_{date[1]}_{date[2]}_{time[0][0:2]}h.pdf"
-    #
-    # os.rename(old_name, new_name)
+    # Renaming the PDF file and getting the CSV file to have the same name
+    old_name = f"./tickets/{filename}"
+    new_name = f"./tickets/{date[0]}_{date[1]}_{date[2]}_{time[0][0:2]}h.pdf"
+    
+    os.rename(old_name, new_name)
 
     # Creating the CSV file
     new.to_csv(f"{filename[0:12]}.csv")
